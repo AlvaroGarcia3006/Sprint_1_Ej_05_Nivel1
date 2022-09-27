@@ -9,9 +9,13 @@ public class Main {
         File[] list = dir.listFiles();
         Arrays.sort(list);
         for (File l : list){
-            System.out.println(l.getName());
-            DirList(l);
-            System.out.println();
+            System.out.print(l.getName());
+            if(l.isDirectory()){
+                System.out.print(" (D)"+"\n");
+                DirList(l);
+            }else {
+                System.out.print(" (F)"+"\n");
+            }
         }
     }
     public static void DirList(File files){
