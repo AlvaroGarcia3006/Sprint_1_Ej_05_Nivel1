@@ -1,0 +1,2 @@
+Modifica el ejercicio anterior. Ahora, en lugar de mostrar el resultado por la pantalla, 
+guarda el resultado en un archivo TXT.
